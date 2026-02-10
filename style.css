@@ -21,21 +21,20 @@ padding:15px 40px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-nav h2{
-color:#00bcd4;
-}
-
-nav ul{
-list-style:none;
-display:flex;
-gap:20px;
-}
-
-nav a{
+nav ul li a{
 color:white;
 text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#00bcd4;
 }
 
 /* HERO */
