@@ -199,4 +199,8 @@ transition:0.3s;
 
 .cta-button:hover{
 background:#0097a7;
+}.project img{
+width:100%;
+border-radius:6px;
+margin-bottom:10px;
 }
