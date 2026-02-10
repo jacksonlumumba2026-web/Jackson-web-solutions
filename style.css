@@ -1,4 +1,4 @@
-*{
+u*{
 margin:0;
 padding:0;
 box-sizing:border-box;
@@ -222,4 +222,14 @@ padding:25px;
 width:280px;
 border-radius:8px;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+.reveal{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
 }
