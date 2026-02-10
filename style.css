@@ -203,4 +203,23 @@ background:#0097a7;
 width:100%;
 border-radius:6px;
 margin-bottom:10px;
+}.testimonials{
+padding:60px 40px;
+text-align:center;
+background:#f9f9f9;
+}
+
+.testimonial-box{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.testimonial{
+background:white;
+padding:25px;
+width:280px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
