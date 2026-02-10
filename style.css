@@ -8,17 +8,17 @@ nav{display:flex;justify-content:space-between;padding:15px;}
 nav ul{display:flex;list-style:none;}
 nav ul li{margin-left:20px;}
 nav ul li a{color:white;text-decoration:none;font-weight:bold;transition:0.3s;}
-nav ul li a:hover{color:#ff6f61;}
+nav ul li a:hover{color:#ff4081;}
 .menu-toggle{display:none;font-size:24px;cursor:pointer;}
 
 /* HERO */
 .hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
 background: linear-gradient(135deg,#00bcd4,#8e24aa); color:white; padding-top:60px;}
 .cta-button{background:#ff6f61;color:white;padding:12px 25px;text-decoration:none;border-radius:5px;transition:0.3s;margin-top:15px;}
-.cta-button:hover{background:#f9a825; color:#111;}
+.cta-button:hover{background:#f9a825; color:#111; transform:scale(1.05);}
 
 /* SECTIONS */
-section{padding:80px 20px;text-align:center;}
+section{padding:80px 20px;text-align:center; border-radius:10px; margin:20px 0;}
 #about{background:#fce4ec; color:#111;}
 #services{background:#e3f2fd;}
 #featured{background:#fff3e0;}
@@ -27,22 +27,45 @@ section{padding:80px 20px;text-align:center;}
 #testimonials{background:#fff8e1;}
 .contact{background:#e1f5fe;}
 
-/* CARDS */
+/* CARDS WITH COLORS */
 .card, .project, .price-card, .testimonial{
-background:white;padding:25px;border-radius:8px;box-shadow:0 4px 15px rgba(0,0,0,0.2);transition:0.3s;}
+padding:25px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.25);transition:0.3s; color:#111;}
+
+/* SERVICES CARDS */
+.services .card:nth-child(1){background:#ff8a65;} /* Website Development */
+.services .card:nth-child(2){background:#4dd0e1;} /* UI/UX Design */
+.services .card:nth-child(3){background:#ffd54f;} /* Maintenance */
+.services .card{color:white;}
+
+/* PORTFOLIO CARDS */
+.project{background:linear-gradient(135deg,#ffcc80,#ff8a65); color:white;}
+.project:nth-child(2){background:linear-gradient(135deg,#4dd0e1,#0097a7);}
+.project:nth-child(3){background:linear-gradient(135deg,#ce93d8,#8e24aa);}
+
+/* PRICING CARDS */
+.price-card{background:linear-gradient(135deg,#a5d6a7,#66bb6a); color:white;}
+.price-card.popular{background:linear-gradient(135deg,#ff6f61,#ff8a65); transform:scale(1.05); border:3px solid white;}
+
+/* TESTIMONIALS */
+.testimonial{background:linear-gradient(135deg,#f48fb1,#f06292); color:white;}
+
+/* CARD HOVER */
 .card:hover, .project:hover, .price-card:hover, .testimonial:hover{
-transform:translateY(-8px); box-shadow:0 6px 20px rgba(0,0,0,0.3);}
-.project img{width:100%;height:200px;object-fit:cover;border-radius:6px;margin-bottom:10px;transition:0.3s;}
-.price-card.popular{border:3px solid #ff6f61; background:linear-gradient(135deg,#ffcc80,#ff6f61); color:white;}
+transform:translateY(-8px); box-shadow:0 8px 25px rgba(0,0,0,0.35);
+}
+
+/* IMAGES */
+.project img{width:100%;height:200px;object-fit:cover;border-radius:6px;margin-bottom:10px; transition:0.3s;}
+.project img:hover{transform:scale(1.05);}
 
 /* FORM */
 form{max-width:400px;margin:auto;display:flex;flex-direction:column;}
 form input, form textarea{margin:10px 0;padding:10px;border-radius:5px;border:1px solid #ccc;}
 form button{background:#8e24aa;color:white;border:none;padding:12px;cursor:pointer;border-radius:5px;transition:0.3s;}
-form button:hover{background:#00bcd4;}
+form button:hover{background:#00bcd4; transform:scale(1.05);}
 
 /* FOOTER */
-footer{background:#1a1a1a;color:white;padding:15px;text-align:center;}
+footer{background:#1a1a1a;color:white;padding:15px;text-align:center; border-top:5px solid #00bcd4;}
 
 /* WHATSAPP */
 .whatsapp-button{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 20px;border-radius:50px;text-decoration:none;z-index:1000;}
