@@ -1,70 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jackson Web Solutions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jackson Tech Solutions</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="hero">
-    <h1><h1>Websites That Help Small Businesses Get Customers</h1>
-<p>Affordable, mobile-friendly landing pages built with HTML & CSS.</p>Business Landing Pages</h1>
-    <p>I help small businesses grow online with clean, modern websites.</p>
-    <button class="btn">Get Started</button>
-  </header>
+<!-- NAVBAR -->
+<nav>
+    <h2>Jackson Tech</h2>
 
-  <section class="content">
-  <h2>My Work</h2>
-  <p>Business Landing Page – Demo Project</p>
-  <ul>
-    <li>Mobile-friendly design</li>
-    <li>WhatsApp contact integration</li>
-    <li>Fast loading</li>
-  </ul>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div>
+        <h1>I Build Modern Business Websites</h1>
+        <p>Helping businesses grow online with professional responsive websites.</p>
+    </div>
 </section>
-  </section>
 
-  <section> 
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        Jackson Tech Solutions builds modern, fast and user-friendly websites
+        that help businesses attract customers and grow online.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+        <div class="card">
+            <h3>Website Development</h3>
+            <p>Professional responsive websites tailored to your business.</p>
+        </div>
+
+        <div class="card">
+            <h3>UI / UX Design</h3>
+            <p>Modern and attractive website designs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Website Maintenance</h3>
+            <p>Keeping your website secure and updated.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <h2>My Projects</h2>
+
+    <div class="portfolio-box">
+        <div class="project">
+            <h3>Corporate Business Website</h3>
+            <p>Professional company website design.</p>
+        </div>
+
+        <div class="project">
+            <h3>Landing Page Design</h3>
+            <p>Marketing and conversion landing pages.</p>
+        </div>
+
+        <div class="project">
+            <h3>Small Business Website</h3>
+            <p>Clean websites for local businesses.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="pricing">
+    <h2>Pricing Packages</h2>
+
+    <div class="pricing-box">
+
+        <div class="price-card">
+            <h3>Basic</h3>
+            <h4>$50</h4>
+            <p>1 Page Website</p>
+            <p>Mobile Responsive</p>
+        </div>
+
+        <div class="price-card popular">
+            <h3>Standard</h3>
+            <h4>$120</h4>
+            <p>3 Page Website</p>
+            <p>Contact Form</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Premium</h3>
+            <h4>$250</h4>
+            <p>5+ Pages Website</p>
+            <p>Maintenance Support</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
     <h2>Contact Me</h2>
 
-  <form onsubmit="sendWhatsApp(); return false;">
-  <label>Name</label>
-  <input type="text" id="name" required>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
-  <label>Email</label>
-  <input type="email" id="email" required>
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/+254741590397" class="whatsapp-button" target="_blank">
+    Chat on WhatsApp
+</a>
 
-  <label>Phone</label>
-  <input type="tel" id="phone">
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Jackson Tech Solutions</p>
+</footer>
 
-  <label>Message</label>
-  <textarea id="message" rows="4"></textarea>
-
-  <button class="btn">Send via WhatsApp</button>
-</form>
-  </section>
-
-  <footer class="footer">
-    <h3>Jackson Web Solutions</h3>
-    <p>© 2026 Jackson</p>
-  </footer>
-<script>
-function sendWhatsApp() {
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let phone = document.getElementById("phone").value;
-  let message = document.getElementById("message").value;
-
-  let url = "https://wa.me/254741590397text="
-    + "Name: " + name + "%0a"
-    + "Email: " + email + "%0a"
-    + "Phone: " + phone + "%0a"
-    + "Message: " + message;
-
-  window.open(url, "_blank");
-}
-</script>
 </body>
 </html>
