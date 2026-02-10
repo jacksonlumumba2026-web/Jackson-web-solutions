@@ -6,84 +6,155 @@
 <title>Jackson Tech Solutions</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <!-- NAVBAR -->
 <header>
 <nav>
 <h2>Jackson Tech</h2>
-
 <ul id="menu">
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
-
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </nav>
 </header>
 
 <!-- HERO -->
-<section id="home" class="hero">
-<h1>We Build Modern Business Websites</h1>
-<p>Helping companies grow online</p>
-<a href="#contact" class="btn">Get Started</a>
+<section id="home" class="hero reveal">
+<div class="hero-content">
+<h1>I Build Modern Business Websites That Convert</h1>
+<p>Helping businesses grow online with fast, responsive, and professional websites.</p>
+<a href="#contact" class="cta-button">Hire Me</a>
+</div>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
-<h2>About Us</h2>
-<p>
-Jackson Tech Solutions builds responsive and modern websites
-that help businesses attract customers and grow online.
-</p>
+<section id="about" class="about reveal">
+<h2>About Me</h2>
+<p>Jackson Tech Solutions creates modern, responsive, and user-friendly websites to help businesses attract customers and grow online.</p>
 </section>
 
 <!-- SERVICES -->
-<section id="services">
+<section id="services" class="services reveal">
 <h2>Our Services</h2>
-
 <div class="service-box">
+<div class="card">
 <h3>Website Development</h3>
-<p>Professional responsive business websites.</p>
+<p>Professional responsive websites tailored for your business.</p>
 </div>
-
-<div class="service-box">
-<h3>UI Design</h3>
-<p>Modern attractive user interface design.</p>
+<div class="card">
+<h3>UI / UX Design</h3>
+<p>Modern and attractive website designs to engage users.</p>
 </div>
-
-<div class="service-box">
+<div class="card">
 <h3>Website Maintenance</h3>
-<p>Keeping your website updated and secure.</p>
+<p>Regular updates, security checks, and smooth performance.</p>
 </div>
+</div>
+</section>
 
+<!-- PORTFOLIO -->
+<section id="portfolio" class="portfolio reveal">
+<h2>My Projects</h2>
+<div class="portfolio-box">
+<div class="project">
+<img src="https://via.placeholder.com/300x200" alt="Project">
+<h3>Corporate Website</h3>
+<p>Modern business website for companies.</p>
+</div>
+<div class="project">
+<img src="https://via.placeholder.com/300x200" alt="Project">
+<h3>Landing Page Design</h3>
+<p>High converting landing pages.</p>
+</div>
+<div class="project">
+<img src="https://via.placeholder.com/300x200" alt="Project">
+<h3>Small Business Website</h3>
+<p>Clean and professional local business websites.</p>
+</div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="pricing reveal">
+<h2>Pricing Packages</h2>
+<div class="pricing-box">
+<div class="price-card">
+<h3>Basic</h3>
+<h4>$50</h4>
+<p>1 Page Website</p>
+<p>Mobile Responsive</p>
+</div>
+<div class="price-card popular">
+<h3>Standard</h3>
+<h4>$120</h4>
+<p>3 Page Website</p>
+<p>Contact Form</p>
+</div>
+<div class="price-card">
+<h3>Premium</h3>
+<h4>$250</h4>
+<p>5+ Pages Website</p>
+<p>Maintenance Support</p>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials reveal">
+<h2>Client Reviews</h2>
+<div class="testimonial-box">
+<div class="testimonial">
+<p>"Amazing work! The website looks professional and modern."</p>
+<h4>- Business Owner</h4>
+</div>
+<div class="testimonial">
+<p>"Delivered fast and exceeded expectations."</p>
+<h4>- Startup Founder</h4>
+</div>
+<div class="testimonial">
+<p>"Highly recommend Jackson Tech Solutions."</p>
+<h4>- Local Company</h4>
+</div>
+</div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="contact reveal">
 <h2>Contact Me</h2>
-
-<form action="https://formsubmit.co/jacksonlumumba275@gmail.com" method="POST">
-
+<form action="https://formsubmit.co/jacksonlumumba2026@gmail.com" method="POST">
 <input type="text" name="name" placeholder="Your Name" required>
-
 <input type="email" name="email" placeholder="Your Email" required>
-
 <textarea name="message" placeholder="Your Message" required></textarea>
-
 <button type="submit">Send Message</button>
-
 </form>
-
 </section>
 
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/254712345678" class="whatsapp-button" target="_blank">💬 Chat on WhatsApp</a>
+
+<!-- FOOTER -->
 <footer>
 <p>© 2026 Jackson Tech Solutions</p>
 </footer>
 
 <script src="script.js"></script>
+<script>
+window.addEventListener('scroll', function(){
+let reveals = document.querySelectorAll('.reveal');
+reveals.forEach(function(reveal){
+let windowHeight = window.innerHeight;
+let revealTop = reveal.getBoundingClientRect().top;
+if(revealTop < windowHeight - 100){ reveal.classList.add('active'); }
+});
+});
+</script>
+
 </body>
 </html>
